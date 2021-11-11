@@ -1,0 +1,48 @@
+Integrantes:
+Rubens Cividati - GEC - 1391
+Samuel Kenzo - GES - 110
+
+Linguagem: Python 3.10
+
+Quantidade de Bits: 32 bits
+Instruções Aceitas: Tipo R e Tipo I
+
+op: 8 bits [0  -  7] operação
+s1: 8 bits [8  - 15] destino
+s2: 8 bits [16 - 23] registrador 1
+s3: 8 bits [24 - 31] registrador 2
+
+    op       s1         S2      S3
+0000_0000 0000_0000 0000_0000 0000_0000 
+
+Quantidade de registros: 10
+$s0, $s1, $s2, $s3, $s4, $s5, $s6, $s7, $s8, $s9, PC
+
+Instruções:
+    Aritméticas:
+        add(s1, s2, s3) Somar os registradores s2 e s3, e salvar o resultado em s1
+        sub(s1, s2 ,s3) Subtrair os registradores s2 e s3, e salvar o resultado em s1
+        addi(s1, s2, C) Somar o registrador s2 com uma constante C, e salvar o resultado em s1
+        subi(s1, s2 ,C) Subtrair o registrador s2 com uma constante C, e salvar o resultado em s1
+    Lógicas:
+        and(s1, s2, s3) Realizar operação E com os registradores s2 e s3, e salvar o resulado em s1
+        or(s1, s2, s3) Realizar operação OU com os registradores s2 e s3, e salvar o resulado em s1
+
+Operações para as Instruções
+    op:
+        0 - add
+        1 - addi
+        2 - sub
+        3 - subi
+        4 - and
+        5 - or
+        6 - 0
+        7 - 0
+        8 - 0
+        9 - 0
+        10 - 0
+        11 - 0
+        12 - 0
+        13 - 0
+        14 - 0
+        15 - 0
